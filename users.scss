@@ -1,0 +1,121 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.mypage{
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: rgb(250, 254, 254); 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top:20vh;
+    margin-bottom:20vh;
+    width: 100%;
+}
+.mypage a{
+    color:aliceblue;
+}
+.mypage-container{
+    font-size: 2.5vh;
+    background-color:rgba(76, 65, 65, 0.8);
+    margin-top:2vh;
+    margin-bottom:2vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 0.2vh aliceblue;
+    border-bottom: solid 0.2vh aliceblue;
+    border-left: solid 0.2vh aliceblue;
+    border-right: solid 0.2vh aliceblue;
+}
+.mypage2{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+}
+.mypage3{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+}
+
+.mypage4{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+}
+
+.note1{
+    background: #f8f0d7;
+    border-left: 1vh dotted rgba(0,0,0,.1);
+    box-shadow: 0 0 0 5 #f8f0d7;
+    padding: 1em;
+    margin: 1em 17vh;
+    color:black;
+    width: 50%;
+    text-align: center;
+}
+.note2{
+    background: #f8f0d7;
+    border-left: 1vh dotted rgba(0,0,0,.1);
+    box-shadow: 0 0 0 5 #f8f0d7;
+    padding: 1em;
+    margin: 1em 17vh;
+    color:black;
+    width: 50%;
+    text-align: center;
+}
+.field{
+    text-align: center;
+    color:aliceblue  
+}
+.signinbox{
+    background-color:rgba(76, 65, 65, 1);
+    border-color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    padding:2vh;
+    border-top: solid 0.2vh aliceblue;
+    border-bottom: solid 0.2vh aliceblue;
+    border-left: solid 0.2vh aliceblue;
+    border-right: solid 0.2vh aliceblue;
+}
+    
+
+.signinbox a{
+    color: aliceblue;
+}
+.actions{
+    text-align: center;
+}
+
+.login{
+    text-align:center;
+    margin-top: 20vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    background-color: rgba(76, 65, 65, 1);
+    
+
+}
+.login a{
+    color: aliceblue;
+}
+
+.loginemail{
+    margin:2vh;
+}
+.loginpassword{
+    margin:1vh;
+}
+.newpost{
+    margin-top: 5vh;
+   
+}
+.signup{
+    background-color: rgb(87, 71, 60);
+    margin-bottom:5vh;
+}

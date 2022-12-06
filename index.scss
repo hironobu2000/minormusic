@@ -1,0 +1,116 @@
+h2 {
+    font-family: 'Zen Kurenaido', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+    text-align: center;
+    color:#e6e5e2
+  }
+  
+  h2:before, h2:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 5vh;
+    height: 1vh;
+    border-top: solid 1px rgb(173, 164, 164);
+    border-bottom: solid 1px rgb(194, 191, 191);
+    text-align: center;
+  }
+  
+  h2:before {
+    left:40vh;
+  }
+  h2:after {
+    right: 40vh;
+  }
+  .webserch{
+    text-align: center;
+    padding:2vh;
+    color:aliceblue;
+    margin-top: 10vh;
+    margin-left:30vh;
+    margin-right:30vh;
+    margin-bottom:10vh;
+    font-weight: bold;
+    background: rgb(62, 61, 61);
+    border: solid 0.2vh rgb(202, 203, 204);/*線*/
+  }
+  .loose-leaf{
+    background: #f8f0d7;
+    border-left: 1vh dotted rgba(0,0,0,.1);
+    box-shadow: 0 0 0 5 #f8f0d7;
+    padding: 1em;
+    margin: 1em 5vh;
+    width:30%;
+  }
+
+  .postminor{
+    color:aliceblue;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:2vh;
+    
+    
+}
+.postminor a{
+  color: aliceblue;
+}
+
+.postminor3{
+    margin-top:20vh;
+    margin-bottom:15vh;
+    text-align: center;
+}
+
+  .loose-leaf2{
+    background: #f8f0d7;
+    border-left: 1vh dotted rgba(0,0,0,.1);
+    box-shadow: 0 0 0 5 #f8f0d7;
+    padding: 1em;
+    margin: 1em 5vh;
+    width:30%;
+    margin-left: 35%;
+    margin-bottom:5vh;
+  }
+  .newpost{
+    text-align: center;
+    background-color:rgba(76, 65, 65, 1) ;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    padding:5vh;
+    border-top: solid 0.2vh aliceblue;
+    border-bottom: solid 0.2vh aliceblue;
+    border-left: solid 0.2vh aliceblue;
+    border-right: solid 0.2vh aliceblue;
+  }
+  .newpost a{
+    color:aliceblue;
+  }
+  
+
+  
+  @media screen and (min-width: 768px) {
+    .svg-sample-background-image::after {
+        background-image: url(../img/wave-pc.svg);
+    }
+  }
+
+.u-pc {
+    display: none;
+}
+
+.aboutus{
+  font-family:'Zen Kurenaido', sans-serif;
+  color:aliceblue;
+  text-align: center;
+  margin-left: 30vh;
+  margin-right:30vh;
+  margin-top: 10vh;
+  margin-bottom:10vh;
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Music</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--IE11用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+  </head>
+
+ 
+  <body>
+  
+  
+  <header>
+<h1><%= link_to 'Myfolte', root_path %></h1>
+<div class="gnavi"><%= link_to "新規投稿へ", new_post_path %></div>
+<div class="gnavi"><%= link_to 'カップリング', posts_cappling_path %></div>
+<div class="gnavi"><%= link_to 'アーティスト', posts_singer_path %></div>
+<div class="gnavi"><%= link_to '時代', posts_chronological_path %></div>
+<div class="gnavi"><%= link_to 'その他', posts_others_path %></div>
+
+<% if user_signed_in? %>
+    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+  <% else %>
+    <%= link_to "新規登録", new_user_registration_path %>
+    <%= link_to "ログイン", new_user_session_path %>
+  <% end %>
+  <% if user_signed_in? %>
+  <%= link_to "マイページへ", user_path(current_user.id) %>
+  <% end %>
+
+
+
+
+
+</header>
+
+<button type="button" class="menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <div class="menu">
+      <div class="menu__item"><%= link_to 'Top', root_path %></div>
+      <div class="menu__item"><%= link_to 'カップリング', posts_cappling_path %></div>
+      <div class="menu__item"><%= link_to 'アーティスト', posts_singer_path %></div>
+      <div class="menu__item"><%= link_to '時代', posts_chronological_path %></div>
+      <div class="menu__item"><%= link_to 'その他', posts_others_path %></div>
+    </div>
+<script>
+$('.menu-btn').on('click', function(){
+    $('.menu').toggleClass('is-active');
+});
+</script>
+</div>
+
+<%= yield %>
+
+<footer>
+<p id="page-top"><a href="#">Page Top</a></p>
+<script>
+function PageTopAnime() {
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200){//上から200pxスクロールしたら
+		$('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
+		$('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
+	}else{
+		if($('#page-top').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
+			$('#page-top').removeClass('UpMove');//UpMoveというクラス名を除き
+			$('#page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
+		}
+	}
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// #page-topをクリックした際の設定
+$('#page-top a').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+</script>
+<p id="page-top"><a href="#">Page Top</a></p>
+<script>
+//スクロールした際の動きを関数でまとめる
+function PageTopAnime() {
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200){//上から200pxスクロールしたら
+		$('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
+		$('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
+	}else{
+		if($('#page-top').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
+			$('#page-top').removeClass('UpMove');//UpMoveというクラス名を除き
+			$('#page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
+		}
+	}
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// #page-topをクリックした際の設定
+$('#page-top a').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+</script>
+  
+  
+  
+
+
+<div class="footer1">
+  ©2022 mumei All Rights Reserved
+</div>
+
+</footer>
+
+ 
+    
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="pagetoplink.js"></script>
+   
+</body>
+</html>

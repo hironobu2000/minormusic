@@ -1,0 +1,505 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ 
+ 
+ * {
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  body {
+    background-image: url(paolo-nicolello-9CoL-pdhPWM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    position: relative; 
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+      Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    color:rgb(73, 72, 75);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding:0vh;
+    margin-bottom: 20vh;
+  }
+  
+  .box1 {
+    width: 260px;/* 紙の横幅 100%にすると全幅表示に */
+    padding: 15px;
+    margin: 2em auto;
+    background: #fbc7f5;/* 紙の色 */
+    color: #000;/* 文字色 */
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(2deg);
+    word-break: break-all;
+ }
+ .box1 p {
+     margin: 0; 
+     padding: 0;
+     font-size: 0.9em;
+ }
+ .box1_tape {
+     width: 50%;
+     height: 35px;
+     margin: -25px auto 0;
+     background: rgba(251, 234, 144, 0.5);/* テープの色 */
+     transform: rotate(-3deg);
+     opacity: 0.9;
+ }
+ .box1_title {
+     text-align: center;
+     font-size: 1.3em!important;
+     margin-top: 10px!important;
+ }
+ .box1_subtitle {
+     text-align: center;
+     font-size: 0.7em!important;
+     margin-bottom: 1em!important;
+ }
+
+ .box1 {
+  width: 260px;/* 紙の横幅 100%にすると全幅表示に */
+  padding: 15px;
+  margin: 2em auto;
+  background-color: rgb(225, 201, 114);/* 紙の色 */
+  color: #000;/* 文字色 */
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(2deg);
+  word-break: break-all;
+}
+.box1 p {
+   margin: 0; 
+   padding: 0;
+   font-size: 0.9em;
+}
+.box1_tape {
+   width: 50%;
+   height: 35px;
+   margin: -25px auto 0;
+   background: rgba(251, 234, 144, 0.5);/* テープの色 */
+   transform: rotate(-3deg);
+   opacity: 0.9;
+}
+.box1_title {
+   text-align: center;
+   font-size: 1.3em!important;
+   margin-top: 10px!important;
+}
+.box1_subtitle {
+   text-align: center;
+   font-size: 0.7em!important;
+   margin-bottom: 1em!important;
+}
+
+.box5 {
+  width: 260px;/* 紙の横幅 100%にすると全幅表示に */
+  padding: 15px;
+  margin: 2em auto;
+  background-color: darkgrey;/* 紙の色 */
+  color: #000;/* 文字色 */
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(2deg);
+  word-break: break-all;
+}
+.box5 p {
+   margin: 0; 
+   padding: 0;
+   font-size: 0.9em;
+}
+.box5_tape {
+   width: 50%;
+   height: 35px;
+   margin: -25px auto 0;
+   background: rgba(251, 234, 144, 0.5);/* テープの色 */
+   transform: rotate(-3deg);
+   opacity: 0.9;
+}
+.box5_title {
+   text-align: center;
+   font-size: 1.3em!important;
+   margin-top: 10px!important;
+}
+.box5_subtitle {
+   text-align: center;
+   font-size: 0.7em!important;
+   margin-bottom: 1em!important;
+}
+
+.box6 {
+  width: 260px;/* 紙の横幅 100%にすると全幅表示に */
+  padding: 15px;
+  margin: 2em auto;
+  background-color: rgb(199, 140, 119);/* 紙の色 */
+  color: #000;/* 文字色 */
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(2deg);
+  word-break: break-all;
+}
+.box6 p {
+   margin: 0; 
+   padding: 0;
+   font-size: 0.9em;
+}
+.box6_tape {
+   width: 50%;
+   height: 35px;
+   margin: -25px auto 0;
+   background: rgba(251, 234, 144, 0.5);/* テープの色 */
+   transform: rotate(-3deg);
+   opacity: 0.9;
+}
+.box6_title {
+   text-align: center;
+   font-size: 1.3em!important;
+   margin-top: 10px!important;
+}
+.box6_subtitle {
+   text-align: center;
+   font-size: 0.7em!important;
+   margin-bottom: 1em!important;
+}
+
+
+.post-container2{
+  display:flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding:5vh;
+  margin-bottom:30vh;
+}
+
+  header {
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color:rgba(0,0,0,0) ;
+    height: 14vh;
+    font-weight: bold;
+    font-size:2.2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:5vh;
+    width:100%;
+    position:absolute;
+    padding:5vh;
+  }
+  
+  .gnavi {
+    background: 
+        linear-gradient(currentColor 0 0) 
+        bottom /var(--d, 0) 3px 
+        no-repeat;
+    transition:0.5s;
+  }
+  .gnavi:hover {
+    --d: 100%;
+    color: rgb(157, 73, 73);;
+  }
+  header a {
+    color: rgb(113, 121, 121); 
+    text-decoration: none; 
+  }
+  header h1 {
+    font-size:6vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    color: white;
+  }
+  header h3 {
+    margin-left: 10vh;
+    margin-top: 1vh;
+    color: rgb(248, 245, 245);
+    font-size:18px;
+  }
+  .header-list {
+    display: flex;
+    align-items: center;
+  }
+  header ul {
+    display: flex; 
+  }
+  header li {
+    list-style: none;
+    margin-right: 40vh;
+  }
+
+  
+  
+  footer {
+    color: rgb(29, 28, 28);
+    font-weight: lighter;
+    height: 8vh;
+    background-image:url(the-blowup-ps8Cfl8os70-unsplash.jpg);
+    bottom: -20vh;
+    height:15vh;
+    width: 100%;
+    padding: 5vh;
+    display: flex;
+    
+    position:absolute;
+    justify-content: center;
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    text-align: center;
+  }
+
+  .footer1{
+    text-align: center;
+  }
+
+  a{
+    color: rgb(91, 89, 89);
+  }
+  a:hover {
+    color: rgb(157, 73, 73);
+    text-decoration: none;
+  }
+
+  #splash {
+    /*fixedで全面に固定*/
+position: fixed;
+z-index: 999;
+width: 100%;
+height: 100%;
+background:#333;
+text-align:center;
+color:#fff;
+}
+#splash_text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    z-index: 999;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
+}
+
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:url(icon_100520_256.png) no-repeat center;
+  background-size: contain;
+	border-radius: 5vh;
+	width: 9vh;
+	height: 9vh;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:1rem;
+	transition:all 0.3s;
+}
+
+
+#page-top a:hover{
+	background-color:rgba(0,0,0,0) ;
+  bottom:8vh;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 2vh;
+	bottom:2vh;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}
+
+
+.wrapper .col{
+  width:100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+.wrapper .col:last-child{
+  background-color:rgba(0,0,0,0);
+}
+.scroll-down-box{
+  display:block;
+  position:relative;
+  text-decoration:none;
+}
+
+.scroll-down-box.alt svg{
+  fill:#fff;
+}
+.scroll-down-box .scroll-text{
+  width:100px;
+  height:auto;
+  -webkit-animation: rotation 10s infinite linear;
+  animation: rotation 10s infinite linear;
+}
+.scroll-down-box.alt .scroll-text{
+  -webkit-animation: rotation 10s infinite linear;
+  animation: rotation 10s infinite linear;
+}
+.scroll-down-box.alt:hover .scroll-text{
+  -webkit-animation: rotation 10s infinite linear;
+  animation: rotation 10s infinite linear;
+}
+.scroll-down-box .scroll-icon{
+  width:25px;
+  height:auto;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition:all 0.2s ease-in;
+  transition:all 0.2s ease-in;
+}
+.scroll-down-box.alt .scroll-icon{
+  width:35px;
+}
+.scroll-down-box:hover .scroll-icon{
+  -webkit-animation: move 1s infinite linear;
+  animation: move 1s infinite linear;
+}
+
+
+@keyframes rotation {
+    from {-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    to {-webkit-transform: rotate(359deg); transform: rotate(359deg);}
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    to {-webkit-transform: rotate(359deg); transform: rotate(359deg);}
+}
+
+@keyframes move {
+    0% {-ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+    25% {-ms-transform: translate(-50%,-35%); -webkit-transform: translate(-50%,-35%); transform: translate(-50%,-35%);}
+    50% {-ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+    75% {-ms-transform: translate(-50%,-65%); -webkit-transform: translate(-50%,-65%); transform: translate(-50%,-65%);}
+    100% {-ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+}
+@-webkit-keyframes move {
+    0% {-ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+    25% {-ms-transform: translate(-50%,-40%); -webkit-transform: translate(-50%,-40%); transform: translate(-50%,-40%);}
+    50% {-ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+    75% {-ms-transform: translate(-50%,-60%); -webkit-transform: translate(-50%,-60%); transform: translate(-50%,-60%);}
+    100% {-ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+}
+  
+.menu-btn{
+  position: fixed;
+  top: 8vh;
+  right: 8vh;
+  z-index: 2;
+  width: 8vh;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(72, 67, 67);
+  color: #fff;
+  margin-top:10vh;
+}
+
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 20%;;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+}
+
+.menu__item{
+  
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.menu__item a{
+  color: #fff;
+  font-size:2.3vh;
+}
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+
